@@ -254,7 +254,7 @@ def run_queue_for_timing(input_df, doctors):
             waiting = [j for j in remaining if x.loc[j, "_arrival"] <= now]
 
 if patients_input is not None and len(patients_input) > 0:
-    repetitions = 200
+    repetitions = 20
     start_time = time.perf_counter()
 
     for _ in range(repetitions):
